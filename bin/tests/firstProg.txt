@@ -1,0 +1,37 @@
+let
+
+	proc popMsg (var a: array 8 of Char) ~
+		let var i : Integer
+		in
+			begin
+				i := 8;
+				while i > 0 do
+					begin
+						i := i - 1;
+						a[i] := '*'
+					end;
+				end;
+
+	const c ~ 100;
+	var n: Integer;
+	var l: Char;
+	var m: array 8 of Char;
+	var x: Integer
+in
+	begin
+		popMsg(var m);
+		x := c;
+		putint(x);
+		while x > 1 do
+			x := x - 1;
+			putint(x);
+			if x > 2 then putint(x)
+			else
+				n := 8;
+				while n > 0 do
+					begin
+						n := n - 1;
+						l := m[n];
+						put(l)
+					end;
+				end;
