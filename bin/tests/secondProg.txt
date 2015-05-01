@@ -4,7 +4,7 @@ let
 in
 	begin
 		x := c;
-		try x > 2 
-		catch x > 10 run
+		try x < 2
+		catch x > 8
 			putint(x)
 	end
